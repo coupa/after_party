@@ -3,10 +3,10 @@ namespace :after_party do
   task <%= file_name %>: :environment do
     puts "Running deploy task '<%= file_name %>'"
 
-    # Put your task implementation HERE.
+    # Put your task implementation HERE and delete this comment.
 
     # Update task as completed.  If you remove the line below, the task will
     # run with every deploy (or every time you call after_party:run).
     AfterParty::TaskRecord.create version: '<%= timestamp %>'
-  end  # task :<%= file_name %>
-end  # namespace :after_party
+  end # task :<%= file_name %>
+end # namespace :after_party
